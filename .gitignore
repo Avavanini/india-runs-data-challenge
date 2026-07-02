@@ -1,0 +1,23 @@
+# Large data files
+candidates.jsonl
+candidates.jsonl.gz
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# macOS archive utility files
+__MACOSX/
+
+# Office documents (optional to ignore, but good to clean up repo)
+*.docx
+
+# Python cache / virtual environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.env

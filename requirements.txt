@@ -1,0 +1,2 @@
+# No external package dependencies required.
+# Built entirely using Python 3.10 standard library.

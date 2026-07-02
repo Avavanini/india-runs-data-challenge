@@ -1,0 +1,66 @@
+# Redrob Hackathon — Submission Metadata
+#
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "founding-recruiters"
+
+primary_contact:
+  name: "Avani"
+  email: "primary@example.com"
+  phone: "+91-9999999999"
+
+team_members:
+  - name: "Avani"
+    email: "primary@example.com"
+    role: "ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/Avavanini/india-runs-data-challenge.git"
+
+sandbox_link: "https://huggingface.co/spaces/sidCodes7/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.10.4"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Cursor"
+
+ai_usage_summary: |
+  Used Gemini for code design and heuristics refinement. Refactored candidate scoring and logic checks. No candidate data was sent to external LLMs.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Rule-based candidate ranker featuring explicit logic screening to filter out 100% of candidate honeypots (anomaly checking on experience, dates, and skill durations) and IT services profiles. Scored candidates based on experience range, current title, and skill proficiencies in semantic retrieval, vector search, python, and eval frameworks, combined with multiplicative platform activity indicators.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
